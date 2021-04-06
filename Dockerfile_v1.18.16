@@ -1,4 +1,4 @@
-FROM busybox
+FROM curlimages/curl
 ENV version=v1.18.16
 WORKDIR /usr/local
 RUN curl -C - -O https://storage.googleapis.com/kubernetes-release/release/${version}/bin/linux/amd64/{kubeadm,kubelet,kubectl}
